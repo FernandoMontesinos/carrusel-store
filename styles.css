@@ -24,6 +24,10 @@ body{
     width: 100%;
 }
 
+.slider li {
+    overflow: hidden;
+}
+
 .slider li, img{
     width: 100%;
 }
@@ -84,4 +88,25 @@ body{
     right: 1rem;
     width: 5rem;
     font-size: 3.5rem;
+}
+
+@media screen and (max-width: 600px){
+    .slider .caption p{
+       display: none;
+    }
+
+    .slider .caption h1{
+        font-size: 3rem;
+    }
+
+    .left, .right{
+        font-size: 2.5rem;
+    }
+    .slider li img {
+        width: 40rem; 
+    }
+
+    .pagination{
+        display: none;
+    }
 }

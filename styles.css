@@ -45,6 +45,23 @@ body{
 
 }
 
+.pagination{
+    position: absolute;
+    top: 102%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagination li {
+    font-size: 1.3rem;
+    margin: .2rem .5rem;
+    color: #858585;
+    list-style: none;
+    cursor: pointer;
+}
+
 .left, .right {
     position: absolute;
     top: 0;
@@ -52,13 +69,19 @@ body{
     display: flex;
     align-items: center;
     color: #fff;
+    z-index: 2;
+    cursor: pointer;
     
 }
 
 .left{
     left: 1rem;
+    width: 5rem;
+    font-size: 3.5rem;
 }
 
 .right{
     right: 1rem;
+    width: 5rem;
+    font-size: 3.5rem;
 }
